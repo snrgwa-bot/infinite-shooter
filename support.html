@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Infinite Cosmic Shooter</title>
+    <meta name="description" content="Get help with Infinite Cosmic Shooter. Contact us, report bugs, or find answers to common questions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #060810;
+            --surface: rgba(255,255,255,0.04);
+            --border: rgba(255,255,255,0.06);
+            --accent: #00ffd0;
+            --accent-glow: rgba(0,255,208,0.25);
+            --text: #ffffff;
+            --text-dim: rgba(255,255,255,0.5);
+            --font: 'JetBrains Mono', monospace;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; }
+
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            padding: 16px 24px; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(6,8,16,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
+        }
+        nav .logo { font-size: 14px; font-weight: 800; letter-spacing: 3px; color: var(--accent); }
+        nav .links { display: flex; gap: 24px; }
+        nav .links a { color: var(--text-dim); text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 1px; transition: color 0.2s; }
+        nav .links a:hover { color: var(--accent); }
+
+        .page { max-width: 700px; margin: 0 auto; padding: 120px 24px 80px; }
+
+        .page h1 {
+            font-size: 32px; font-weight: 800; letter-spacing: 4px; margin-bottom: 8px;
+        }
+        .page h1 span { color: var(--accent); }
+        .page .subtitle { font-size: 13px; color: var(--text-dim); margin-bottom: 48px; line-height: 1.7; }
+
+        .card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+            padding: 28px 24px; margin-bottom: 16px; transition: border-color 0.3s;
+        }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { font-size: 14px; font-weight: 800; letter-spacing: 1px; margin-bottom: 10px; }
+        .card p { font-size: 12px; color: var(--text-dim); line-height: 1.8; }
+        .card a { color: var(--accent); text-decoration: none; font-weight: 700; }
+        .card a:hover { text-decoration: underline; }
+
+        .faq-item { margin-bottom: 20px; }
+        .faq-item summary {
+            cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.5px;
+            padding: 16px 20px; background: var(--surface); border: 1px solid var(--border);
+            border-radius: 12px; list-style: none; transition: border-color 0.3s;
+        }
+        .faq-item summary:hover { border-color: var(--accent); }
+        .faq-item summary::marker { display: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item[open] summary { border-color: var(--accent); border-radius: 12px 12px 0 0; }
+        .faq-item .answer {
+            font-size: 12px; color: var(--text-dim); line-height: 1.8;
+            padding: 16px 20px; background: var(--surface);
+            border: 1px solid var(--border); border-top: none; border-radius: 0 0 12px 12px;
+        }
+
+        footer {
+            text-align: center; padding: 48px 24px; border-top: 1px solid var(--border);
+        }
+        footer .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        footer .footer-links a { color: var(--text-dim); text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 1px; transition: color 0.2s; }
+        footer .footer-links a:hover { color: var(--accent); }
+        footer .copy { margin-top: 16px; font-size: 10px; color: rgba(255,255,255,0.2); letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo" style="text-decoration:none;">ICS</a>
+    <div class="links">
+        <a href="index.html">HOME</a>
+        <a href="support.html">SUPPORT</a>
+        <a href="privacy.html">PRIVACY</a>
+    </div>
+</nav>
+
+<div class="page">
+    <h1><span>SUPPORT</span></h1>
+    <p class="subtitle">Need help? We're here for you. Find answers below or reach out directly.</p>
+
+    <!-- Contact -->
+    <div class="card">
+        <h3>📧 CONTACT US</h3>
+        <p>Have a question or feedback? Send us an email and we'll get back to you as soon as possible.</p>
+        <p style="margin-top:12px;"><a href="mailto:snrgwa@gmail.com">snrgwa@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+        <h3>🐛 REPORT A BUG</h3>
+        <p>Found something broken? Let us know so we can fix it in the next update.</p>
+        <p style="margin-top:12px;"><a href="mailto:snrgwa@gmail.com?subject=Bug%20Report%20-%20Infinite%20Cosmic%20Shooter">Send Bug Report</a></p>
+    </div>
+
+    <div class="card">
+        <h3>⭐ RATE THE APP</h3>
+        <p>Enjoying the game? A review on the App Store helps us a lot and keeps updates coming.</p>
+        <p style="margin-top:12px;"><a href="https://apps.apple.com/app/id6743130541?action=write-review">Leave a Review</a></p>
+    </div>
+
+    <!-- FAQ -->
+    <h3 style="font-size:10px;font-weight:700;letter-spacing:4px;color:var(--accent);margin:48px 0 24px;">FAQ</h3>
+
+    <details class="faq-item">
+        <summary>How do I unlock new ships?</summary>
+        <div class="answer">Progress through waves and earn coins to purchase new ships from the in-game Store. Each ship has unique stats and abilities.</div>
+    </details>
+
+    <details class="faq-item">
+        <summary>How do upgrades work?</summary>
+        <div class="answer">Upgrades are per-ship. Visit the Store and spend coins to improve fire rate, bullet power, shield duration, and more. Each ship maintains its own upgrade levels.</div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Can I restore my purchases?</summary>
+        <div class="answer">Yes! In-app purchases can be restored automatically. Open the Store, go to the Coins tab, and tap "Restore Purchases".</div>
+    </details>
+
+    <details class="faq-item">
+        <summary>The game is running slow. What can I do?</summary>
+        <div class="answer">Try closing other apps running in the background. The game runs best on iPhone 8 and newer. If the issue persists, please contact us.</div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Is an internet connection required?</summary>
+        <div class="answer">No! The core game works fully offline. An internet connection is only needed for watching reward ads and making in-app purchases.</div>
+    </details>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://essentialdevteam.com/">Website</a>
+    </div>
+    <p class="copy">&copy; 2025 Essential Dev Team. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
