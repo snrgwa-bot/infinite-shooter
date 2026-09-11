@@ -233,7 +233,23 @@
             nav .links a { font-size: 10px; }
             .screenshots .phone { width: 150px; height: 320px; }
         }
-    </style>
+    
+        /* Large displays: sections were pinned at 960px, which on a 2560px
+           monitor reads as a narrow column adrift in empty space. This page
+           sizes all type in px, so scaling the root font size would do
+           nothing — instead widen the shell and grow the phone mockups so the
+           page fills more of the screen. The hero paragraph keeps its own
+           480px measure, so line length stays readable however wide the
+           window gets. */
+        @media (min-width: 1500px) {
+            section { max-width: 1280px; }
+            .screenshots .phone { width: 240px; height: 504px; }
+        }
+        @media (min-width: 2000px) {
+            section { max-width: 1500px; }
+            .screenshots .phone { width: 270px; height: 567px; }
+        }
+</style>
 </head>
 <body>
 
